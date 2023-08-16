@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+ <style>
+    #box1 {
+      display: none;
+      /* background-color: blueviolet;
+      color: white;
+      width: 100px;
+      height: 100px; */
+    }
+
+    #box2 {
+      display: none;
+    }
+  </style>
+   </head>
+  <body>
+  <form action="update" method="post">
+  	<p>Which product you want to update</p>
+  	Enter ProductCode:<input type="text" name="code5"/>
+  	<div id="box1">
+    Enter Price:<input type="text" name="price" />
+  </div>
+
+  <div id="box2">
+    Enter quantity:<input type="text" name="qty" />
+  </div>
+   	<input type="submit" value="Submit">
+  </form>
+  	
+  <p>What do you want to update :</p>
+  
+  <div>
+    <input type="radio" id="price" name="update" value="price" onclick="handleRadioClick('price')"/>
+    <label for="price">price</label>
+  </div>
+
+  <div>
+    <input type="radio" id="qty" name="update" value="qty" onclick="handleRadioClick('qty')" />
+    <label for="qty">quantity</label>
+  </div>
+   
+  <script src="index.js"></script>
+  
+</body>
+
+</html>
+
